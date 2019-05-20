@@ -1,99 +1,100 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-    "appName": {
-      "value": "AzFunc"
-    },
-    "appServicePlanType": {
-      "value": "ServicePlan"
-    },
-    "appServicePlanTier": {
-      "value": "Standard"
-    },
-    "appServicePlanName": {
-      "value": "S2"
-    },
-    "appServicePlanCapacity": {
-      "value": 2
-    },
-    "appInsightsLocation": {
-      "value": "West Europe"
-    },
-    "appInsightsName": {
-      "value": "appInsightsInstance"
-    },
-    "githubRepoURL": {
-      "value": "https://github.com/mirtene/FinalSplunk.git"
-    },
-    "githubRepoBranch": {
-      "value": "master"
-    },
-    "eventHubConnectionString": {
-      "value": "Endpoint=sb://eventhubsec.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=y/D+np04A5q5GHAwRAt5X4cNKmiYEzXhdphC4TSTCb0="
-    },
-    "inputHubNameActivityLogs": {
-      "value": "insights-operational-logs"
-    },
-    "consumerGroupNameActivityLog": {
-      "value": "$default"
-    },
-    "inputHubNameSigninLogs": {
-      "value": "insights-logs-signinlogs"
-    },
-    "consumerGroupNameSigninLog": {
-      "value": "$default"
-    },
-    "inputHubNameNSGEvents": {
-      "value": "insights-logs-networksecuritygroupevent"
-    },
-    "consumerGroupNameNSGEvents": {
-      "value": "$default"
-    },
-    "inputHubNameAuditEvents": {
-      "value": "insights-logs-auditevent"
-    },
-    "consumerGroupNameAuditEvents": {
-      "value": "$default"
-    },
-    "inputHubNameAuditLogs": {
-      "value": "insights-logs-auditlogs"
-    },
-    "consumerGroupNameAuditLogs": {
-      "value": "$default"
-    },
-    "inputHubNameNSGRuleCounter": {
-      "value": "insights-logs-networksecuritygrouprulecounter"
-    },
-    "consumerGroupNameNSGRuleCounter": {
-      "value": "$default"
-    },
-    "inputHubNameDiagnosticLogs": {
-      "value": "insights-logs-diagnostics"
-    },
-    "consumerGroupNameDiagnosticLogs": {
-      "value": "$default"
-    },
-    "inputHubNameMetrics": {
-      "value": "insights-metrics-pt1m"
-    },
-    "consumerGroupNameMetrics": {
-      "value": "$default"
-    },
-    "inputHubNameFaults": {
-      "value": "transmission-faults"
-    },
-    "splunkToken": {
-      "value": "4BC788E0-YOUR-GUID-HERE-733EBC656112"
-    },
-    "splunkAddress": {
-      "value": "https://YourSplunkCloudorSplunkEnterpriseAddress.cloud.splunk.com:8088"
-    },
-    "splunkCertThumbprint": {
-      "value": null
-    },
-    "outputBinding": {
-      "value": "hec"
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "appName": {
+        "value": "AzFunc"
+      },
+      "appServicePlanType": {
+        "value": "ServicePlan"
+      },
+      "appServicePlanTier": {
+        "value": "Standard"
+      },
+      "appServicePlanName": {
+        "value": "S2"
+      },
+      "appServicePlanCapacity": {
+        "value": 2
+      },
+      "appInsightsLocation": {
+        "value": "West Europe"
+      },
+      "appInsightsName": {
+        "value": "appInsightsInstance"
+      },
+      "githubRepoURL": {
+        "value": "https://github.com/mirtene/FinalSplunk.git"
+      },
+      "githubRepoBranch": {
+        "value": "master"
+      },
+      "eventHubConnectionString": {
+        "value": "Endpoint=sb://eventhubsec.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=y/D+np04A5q5GHAwRAt5X4cNKmiYEzXhdphC4TSTCb0="
+      },
+      "inputHubNameActivityLogs": {
+        "value": "insights-operational-logs"
+      },
+      "consumerGroupNameActivityLogs": {
+        "value": "$default"
+      },
+      "inputHubNameSigninLogs": {
+        "value": "insights-logs-signinlogs"
+      },
+      "consumerGroupNameSigninLogs": {
+        "value": "$default"
+      },
+      "inputHubNameNSGEvents": {
+        "value": "insights-logs-networksecuritygroupevent"
+      },
+      "consumerGroupNameNSGEvents": {
+        "value": "$default"
+      },
+      "inputHubNameAuditEvents": {
+        "value": "insights-logs-auditevent"
+      },
+      "consumerGroupNameAuditEvents": {
+        "value": "$default"
+      },
+      "inputHubNameAuditLogs": {
+        "value": "insights-logs-auditlogs"
+      },
+      "consumerGroupNameAuditLogs": {
+        "value": "$default"
+      },
+      "inputHubNameNSGRuleCounter": {
+        "value": "insights-logs-networksecuritygrouprulecounter"
+      },
+      "consumerGroupNameNSGRuleCounter": {
+        "value": "$default"
+      },
+      "inputHubNameDiagnosticLogs": {
+        "value": "insights-logs-diagnostics"
+      },
+      "consumerGroupNameDiagnosticLogs": {
+        "value": "$default"
+      },
+      "inputHubNameMetrics": {
+        "value": "insights-metrics-pt1m"
+      },
+      "consumerGroupNameMetrics": {
+        "value": "$default"
+      },
+      "inputHubNameFaults": {
+        "value": "transmission-faults"
+      },
+      "splunkToken": {
+        "value": "4BC788E0-YOUR-GUID-HERE-733EBC656112"
+      },
+      "splunkAddress": {
+        "value": "https://YourSplunkCloudorSplunkEnterpriseAddress.cloud.splunk.com:8088"
+      },
+      "splunkCertThumbprint": {
+        "value": null
+      },
+      "outputBinding": {
+        "value": "hec"
+      }
     }
   }
-}
+  

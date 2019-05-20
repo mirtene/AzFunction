@@ -41,7 +41,7 @@
         },
         "appInsightsLocation": {
             "type": "string",
-            "defaultValue": "UK South",
+            "defaultValue": "West Europe",
             "allowedValues": [
                 "Australia East",
                 "Canada Central",
@@ -251,9 +251,17 @@
                             "name": "input-hub-name-activity-log",
                             "value": "[parameters('inputHubNameActivityLogs')]"
                         },
+                          {
+                            "name": "input-hub-name-signin-log",
+                            "value": "[parameters('inputHubNameActivityLogs')]"
+                        },
                         {
                             "name": "consumer-group-activity-log",
                             "value": "[parameters('consumerGroupNameActivityLog')]"
+                        },
+                        {
+                            "name": "consumer-group-signin-log",
+                            "value": "[parameters('consumerGroupNameSigninLog')]"
                         },
                         {
                             "name": "input-hub-name-diagnostic-logs",

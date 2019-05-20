@@ -79,7 +79,7 @@
             "type": "string",
             "defaultValue": "insights-operational-logs"
         },
-        "consumerGroupNameActivityLog": {
+        "consumerGroupNameActivityLogs": {
             "type": "string",
             "defaultValue": "$default"
         },
@@ -87,7 +87,7 @@
             "type": "string",
             "defaultValue": "insights-logs-signinlogs"
         },
-        "consumerGroupNameSigninLog": {
+        "consumerGroupNameSigninLogs": {
             "type": "string",
             "defaultValue": "$default"
         },
@@ -107,25 +107,41 @@
             "type": "string",
             "defaultValue": "$default"
         },
-        "inputHubNameWAD": {
+        "inputHubNameAuditLogs": {
             "type": "string",
-            "defaultValue": "insights-telemetry-wad"
+            "defaultValue": "insights-logs-auditlogs"
         },
-        "consumerGroupNameWAD": {
+        "consumerGroupNameAuditLogs": {
             "type": "string",
             "defaultValue": "$default"
         },
-        "inputHubNameLAD": {
+        "inputHubNameAuditEvents": {
             "type": "string",
-            "defaultValue": "insights-telemetry-lad"
+            "defaultValue": "insights-logs-auditevent"
         },
-        "consumerGroupNameLAD": {
+        "consumerGroupNameAuditEvents": {
             "type": "string",
             "defaultValue": "$default"
         },
-        "inputHubNameFaults": {
+        "inputHubNameNSGEvents": {
             "type": "string",
-            "defaultValue": "transmission-faults"
+            "defaultValue": "insights-logs-networksecuritygroupevent"
+        }, 
+        "consumerGroupNameNSGEvents": {
+            "type": "string",
+            "defaultValue": "$default"
+        },
+        "inputHubNameNSGRuleCounter": {
+            "type": "string",
+            "defaultValue": "insights-logs-networksecuritygrouprulecounter"
+        }, 
+        "consumerGroupNameNSGRuleCounter": {
+            "type": "string",
+            "defaultValue": "$default"
+        },
+            "inputHubNameFaults": {
+                "type": "string",
+                "defaultValue": "transmission-faults"
         },
         "splunkToken": {
             "type": "string"

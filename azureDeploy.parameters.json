@@ -1,54 +1,87 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "appName": {
-            "value": "YourAppName"
-        },
-        "appServicePlanTier": {
-            "value": "Standard"
-        },
-        "appServicePlanName": {
-            "value": "S2"
-        },
-        "appServicePlanCapacity": {
-            "value": 2
-        },
-        "githubRepoURL": {
-            "value": "https://github.com/YourName/AzureFunctionForSplunk.git"
-        },
-        "githubRepoBranch": {
-            "value": "master"
-        },
-        "eventHubConnectionString": {
-            "value": "Endpoint=sb://YourServiceBusNamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=gobbledegook"
-        },
-        "inputHubNameActivityLogs": {
-            "value": "insights-operational-logs"
-        },
-        "inputHubNameSigninLogs": {
-            "value": "insights-logs-signinlogs"
-        },
-        "inputHubNameDiagnosticsLogs": {
-            "value": "my-hub-name-for-diagnostics-logs"
-        },
-        "inputHubNameMetrics": {
-            "value": "my-hub-name-for-metrics"
-        },
-        "inputHubNameWAD": {
-            "value": "insights-telemetry-wad"
-        },
-        "inputHubNameLAD": {
-            "value": "insights-telemetry-lad"
-        },
-        "splunkToken": {
-            "value": "4BC788E0-YOUR-GUID-HERE-733EBC656112"
-        },
-        "splunkAddress": {
-            "value": "https://YourSplunkCloudorSplunkEnterpriseAddress.cloud.splunk.com:8088"
-        },
-        "outputBinding": {
-            "value": "hec"
-        }
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "value": "AzFunc"
+    },
+    "appServicePlanType": {
+      "value": "ServicePlan"
+    },
+    "appServicePlanTier": {
+      "value": "Standard"
+    },
+    "appServicePlanName": {
+      "value": "S2"
+    },
+    "appServicePlanCapacity": {
+      "value": 2
+    },
+    "appInsightsLocation": {
+      "value": "West Europe"
+    },
+    "appInsightsName": {
+      "value": "appInsightsInstance"
+    },
+    "githubRepoURL": {
+      "value": "https://github.com/mirtene/FinalSplunk.git"
+    },
+    "githubRepoBranch": {
+      "value": "master"
+    },
+    "eventHubConnectionString": {
+      "value": "Endpoint=sb://eventhubsec.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=y/D+np04A5q5GHAwRAt5X4cNKmiYEzXhdphC4TSTCb0="
+    },
+    "inputHubNameActivityLogs": {
+      "value": "insights-operational-logs"
+    },
+    "inputHubNameSigninLogs": {
+      "value": "insights-logs-signinlogs"
+    },
+    "consumerGroupNameActivityLog": {
+      "value": "$default"
+    },
+    "consumerGroupNameSigninLog": {
+      "value": "$default"
+    },
+    "inputHubNameDiagnosticLogs": {
+      "value": "insights-logs-diagnostics"
+    },
+    "consumerGroupNameDiagnosticLogs": {
+      "value": "$default"
+    },
+    "inputHubNameMetrics": {
+      "value": "my-hub-name-for-metrics"
+    },
+    "consumerGroupNameMetrics": {
+      "value": "$default"
+    },
+    "inputHubNameWAD": {
+      "value": "insights-telemetry-wad"
+    },
+    "consumerGroupNameWAD": {
+      "value": "$default"
+    },
+    "inputHubNameLAD": {
+      "value": "insights-telemetry-lad"
+    },
+    "consumerGroupNameLAD": {
+      "value": "$default"
+    },
+    "inputHubNameFaults": {
+      "value": "transmission-faults"
+    },
+    "splunkToken": {
+      "value": "4BC788E0-YOUR-GUID-HERE-733EBC656112"
+    },
+    "splunkAddress": {
+      "value": "https://YourSplunkCloudorSplunkEnterpriseAddress.cloud.splunk.com:8088"
+    },
+    "splunkCertThumbprint": {
+      "value": null
+    },
+    "outputBinding": {
+      "value": "hec"
     }
+  }
 }

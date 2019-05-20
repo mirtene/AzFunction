@@ -35,13 +35,37 @@
     "inputHubNameActivityLogs": {
       "value": "insights-operational-logs"
     },
-    "inputHubNameSigninLogs": {
-      "value": "insights-logs-signinlogs"
-    },
     "consumerGroupNameActivityLog": {
       "value": "$default"
     },
+    "inputHubNameSigninLogs": {
+      "value": "insights-logs-signinlogs"
+    },
     "consumerGroupNameSigninLog": {
+      "value": "$default"
+    },
+    "inputHubNameNSGEvents": {
+      "value": "insights-logs-networksecuritygroupevent"
+    },
+    "consumerGroupNameNSGEvents": {
+      "value": "$default"
+    },
+    "inputHubNameAuditEvents": {
+      "value": "insights-logs-auditevent"
+    },
+    "consumerGroupNameAuditEvents": {
+      "value": "$default"
+    },
+    "inputHubNameAuditLogs": {
+      "value": "insights-logs-auditlogs"
+    },
+    "consumerGroupNameAuditLogs": {
+      "value": "$default"
+    },
+    "inputHubNameNSGRuleCounter": {
+      "value": "insights-logs-networksecuritygrouprulecounter"
+    },
+    "consumerGroupNameNSGRuleCounter": {
       "value": "$default"
     },
     "inputHubNameDiagnosticLogs": {
@@ -51,21 +75,9 @@
       "value": "$default"
     },
     "inputHubNameMetrics": {
-      "value": "my-hub-name-for-metrics"
+      "value": "insights-metrics-pt1m"
     },
     "consumerGroupNameMetrics": {
-      "value": "$default"
-    },
-    "inputHubNameWAD": {
-      "value": "insights-telemetry-wad"
-    },
-    "consumerGroupNameWAD": {
-      "value": "$default"
-    },
-    "inputHubNameLAD": {
-      "value": "insights-telemetry-lad"
-    },
-    "consumerGroupNameLAD": {
       "value": "$default"
     },
     "inputHubNameFaults": {

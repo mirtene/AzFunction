@@ -65,7 +65,7 @@
         },
         "githubRepoURL": {
             "type": "string",
-            "defaultValue": "https://github.com/microsoft/AzureFunctionForSplunkVS.git"
+            "defaultValue": "https://github.com/mirtene/FinalSplunk.git"
         },
         "githubRepoBranch": {
             "type": "string",
@@ -80,6 +80,14 @@
             "defaultValue": "insights-operational-logs"
         },
         "consumerGroupNameActivityLog": {
+            "type": "string",
+            "defaultValue": "$default"
+        },
+        "inputHubNameSigninLogs": {
+            "type": "string",
+            "defaultValue": "insights-logs-signinlogs"
+        },
+        "consumerGroupNameSigninLog": {
             "type": "string",
             "defaultValue": "$default"
         },
@@ -253,7 +261,7 @@
                         },
                           {
                             "name": "input-hub-name-signin-log",
-                            "value": "[parameters('inputHubNameActivityLogs')]"
+                            "value": "[parameters('inputHubNameSigninLogs')]"
                         },
                         {
                             "name": "consumer-group-activity-log",

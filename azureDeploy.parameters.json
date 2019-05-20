@@ -26,6 +26,9 @@
         "inputHubNameActivityLogs": {
             "value": "insights-operational-logs"
         },
+        "inputHubNameSigninLogs": {
+            "value": "insights-logs-signinlogs"
+        },
         "inputHubNameDiagnosticsLogs": {
             "value": "my-hub-name-for-diagnostics-logs"
         },
